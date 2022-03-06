@@ -17,12 +17,11 @@ header h1 {
 
 .contenedor {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 120px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  border: solid 3px grey;
   font-family: "Montserrat", sans-serif;
 }
 .carita {
@@ -35,8 +34,8 @@ header h1 {
   border-radius: 50%;
   border: none;
   position: absolute;
-  right: 30px;
-  bottom: 30px;
+  right: 50px;
+  bottom: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,4 +43,34 @@ header h1 {
 .fav span {
   font-size: 40px;
   margin-top: 3px;
+  cursor: pointer;
+}
+.historyTable {
+  font-size: 16px;
+  border-radius: 8px;
+  /* background-color: #363636; */
+  /* bottom: 30px; */
+  /* table-layout: fixed; */
+  /* border-collapse: collapse; */
+  border-spacing: 0 5px;
+  width: 380px;
+}
+td {
+  /* border-radius: 8px; */
+  height: 40px;
+  width: 380px;
+}
+tr {
+  width: 380px;
+  /* height: 25px; */
+  font-size: 16px;
+  border-radius: 8px;
+  color: black;
+  grid-auto-flow: row;
+}
+
+#pantallaFormulario,
+#pantallaListado,
+#pantallaDetalle {
+  display: none;
 }

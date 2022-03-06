@@ -17,34 +17,29 @@
     <!-- pantallaBienvenida -->
     <section id="pantallaBienvenida" class="pantallaBienvenida">
         <div class="contenedor">
+            <button id="agregarProducto" class="fav"><span>+</span></button>
             <h1>No agregaste ninguna tarea</h1>
             <span class="carita">:(</span>
-            <button id="agregarProducto" class="fav"><span>+</span></button>
         </div>
     </section>
     <!-- pantallaFormulario -->
     <section id="pantallaFormulario" class="pantallaFormulario">
         <div class="contenedor">
-            <h1>Formulario</h1>
-            <label for="form-title">agregar producto</label>
-            <input type="text" class="form-control" id="form-title"
-            placeholder="Frutas, Verduras ...etc">
-            <select class="" name="" id="form-category">
-                <option value="1">Frutas</option>
-                <option value="2">Verduras</option>
-                <option value="3">Ropa</option>
-                <option value="4">Electronica</option>
-                <option value="5">Farmacia</option>
-            </select>
-            <label for="formDescripcion"></label>
-            <textarea name="" id="formDescripcion" class="form-text" cols="30" rows="10"></textarea>
-            <button type="button">agregar producto</button>
+            <input type="text" class="formTitle" id="formTitle"
+            placeholder="Por ej. Terminar proyecto UX UI">
+            <textarea name="" placeholder="Descripción" id="formDescripcion" class="formDescripcion" cols="30" rows="10"></textarea>
+            <button id="addTask" type="button">Añadir tarea</button>
+            <button id="exitButton" type="button">Cancelar</button>
         </div>
     </section>
     <!-- pantallaListado -->
     <section id="pantallaListado" class="pantallaListado">
         <div class="contenedor">
             <h1>Listado</h1>
+            <table id="historyTable" class="historyTable">
+                <tr>
+                </tr>
+            </table>
         </div>
     </section>
     <!-- pantallaDetalle -->
