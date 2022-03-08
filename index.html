@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TO-DO-LIST</title>
+    <title>✔✔TO-DO-LIST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -17,29 +20,50 @@
     <!-- pantallaBienvenida -->
     <section id="pantallaBienvenida" class="pantallaBienvenida">
         <div class="contenedor">
-            <button id="agregarProducto" class="fav"><span>+</span></button>
+            <!-- <button id="agregarProducto" class="fav">
+                <i class="fa-solid fa-circle-plus"></i>
+            </button>
             <h1>No agregaste ninguna tarea</h1>
-            <span class="carita">:(</span>
+            <span class="carita">:(</span> -->
+            <div id="listTask" class="listTask">
+                <p></p>
+                <i class="fa-duotone fa-circle-check"></i>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <button id="agregarProducto" class="fav">
+                <i class="fa-solid fa-circle-plus"></i>
+            </button>
         </div>
     </section>
     <!-- pantallaFormulario -->
     <section id="pantallaFormulario" class="pantallaFormulario">
         <div class="contenedor">
-            <input type="text" class="formTitle" id="formTitle"
-            placeholder="Por ej. Terminar proyecto UX UI">
-            <textarea name="" placeholder="Descripción" id="formDescripcion" class="formDescripcion" cols="30" rows="10"></textarea>
-            <button id="addTask" type="button">Añadir tarea</button>
-            <button id="exitButton" type="button">Cancelar</button>
+            <form id="formTask">
+            <!-- <div class="container"> -->
+                <input type="text" class="formTitle" id="formTitle" name="formTitle"
+                placeholder="Por ej. Organizar las compras mensuales">
+                <!-- <textarea placeholder="Descripción" id="formDescripcion" class="formDescripcion" name="formDescripcion" cols="30" rows="10"></textarea> -->
+                <button id="addTask" class="addTask" type="submit">Añadir tarea</button>
+                <!-- <button id="exitButton" class="exitButton" type="button">Cancelar</button> -->
+            <!-- </div> -->
+            </form>
+            <button id="exitButton" class="exitButton" type="button">
+                <i class="fa-regular fa-circle-left"></i>
+            </button>
         </div>
     </section>
     <!-- pantallaListado -->
     <section id="pantallaListado" class="pantallaListado">
         <div class="contenedor">
             <h1>Listado</h1>
-            <table id="historyTable" class="historyTable">
-                <tr>
-                </tr>
-            </table>
+            <div id="listTask" class="listTask">
+                <p></p>
+                <i class="fa-duotone fa-circle-check"></i>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <button id="agregarProductoListado" class="fav">
+                <i class="fa-solid fa-circle-plus"></i>
+            </button>
         </div>
     </section>
     <!-- pantallaDetalle -->
@@ -48,6 +72,14 @@
             <h1>Detalle</h1>
         </div>
     </section>
-<script src="src/js.js"></script>
+
+    <template id="template">
+        <div class="taskItems">
+            <p></p>
+            <i class="fa fa-duotone fa-circle-check" role="button"></i>
+            <i class="fa fa-solid fa-circle-xmark" role="button"></i>
+        </div>
+    </template>
+<script src="src/app.js"></script>
 </body>
 </html>
