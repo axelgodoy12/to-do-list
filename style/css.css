@@ -43,8 +43,8 @@ header h1 {
   height: 50px;
   border-radius: 50%;
   border: none;
-  background: linear-gradient(315deg, #646c36, #778040);
-  box-shadow: -22px -22px 44px #626a35, 22px 22px 44px #7c8643;
+  background: linear-gradient(145deg, #646c36, #778040);
+  box-shadow: 5px 5px 10px #5a6131, -5px -5px 10px #848f47;
   position: absolute;
   right: 50px;
   bottom: 70px;
