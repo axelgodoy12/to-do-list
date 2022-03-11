@@ -3,7 +3,6 @@ let pantallaBienvenida = document.getElementById("pantallaBienvenida");
 let pantallaFormulario = document.getElementById("pantallaFormulario");
 let pantallaListado = document.getElementById("pantallaListado");
 let pantallaDetalle = document.getElementById("pantallaDetalle");
-let agregarProductoListado = document.getElementById("agregarProductoListado");
 let agregarProducto = document.getElementById("agregarProducto");
 let exitButton = document.getElementById("exitButton");
 const formTask = document.getElementById("formTask");
@@ -62,6 +61,7 @@ const setTask = (e) => {
     formTitle.focus();
 
     addTask();
+    mostrarBienvenida();
 }
 
 const addTask = () => {
@@ -69,7 +69,7 @@ const addTask = () => {
 
     if (Object.values(tasks).length === 0) {
         listTask.innerHTML = `
-            <div class="alert alert-dark text-center">
+            <div>
                 No hay tareas pendietes 👌👌
             </div> `;
         return
@@ -96,13 +96,13 @@ const btnAdd = (e) => {
         // console.log(e.target.dataset.id)
         tasks[e.target.dataset.id].estado = true;
         addTask();
-        console.log(tasks);
+        // console.log(tasks);
     }
 
     if (e.target.classList.contains('fa-circle-xmark')) {
         delete tasks[e.target.dataset.id];
         addTask();
-        console.log(tareas);
+        // console.log(tareas);
     }
     if (e.target.classList.contains('fa-undo-alt')) {
         tasks[e.target.dataset.id].estado = false;
@@ -111,6 +111,3 @@ const btnAdd = (e) => {
     e.stopPropagation()
 }
 
-
-// agregarProducto.addEventListener('click', addTask2);
-// agregarProductoListado.addEventListener("click", addTask2);

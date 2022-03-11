@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>✔✔TO-DO-LIST</title>
+    <title>✔TO-DO-LIST</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <h1>TODOLIST</h1>
+        <h1>TODOLIST✍🏼</h1>
     </header>
     <!-- pantallaBienvenida -->
     <section id="pantallaBienvenida" class="pantallaBienvenida">
@@ -25,48 +25,38 @@
             </button>
             <h1>No agregaste ninguna tarea</h1>
             <span class="carita">:(</span> -->
-            <div id="listTask" class="listTask">
-                <p></p>
-                <i class="fa-duotone fa-circle-check"></i>
-                <i class="fa-solid fa-circle-xmark"></i>
+            <div class="contTask">
+                <div id="listTask" class="listTask">
+                    <p></p>
+                    <i class="fa-duotone fa-circle-check"></i>
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </div>
             </div>
             <button id="agregarProducto" class="fav">
-                <i class="fa-solid fa-circle-plus"></i>
+                <i class="fa-solid fa-plus fa-2x"></i>
             </button>
         </div>
     </section>
     <!-- pantallaFormulario -->
     <section id="pantallaFormulario" class="pantallaFormulario">
         <div class="contenedor">
-            <form id="formTask">
+            <form id="formTask" class="formTask">
             <!-- <div class="container"> -->
                 <input type="text" class="formTitle" id="formTitle" name="formTitle"
-                placeholder="Por ej. Organizar las compras mensuales">
+                placeholder="Por ej. Realizar inventigación del mercado">
                 <!-- <textarea placeholder="Descripción" id="formDescripcion" class="formDescripcion" name="formDescripcion" cols="30" rows="10"></textarea> -->
-                <button id="addTask" class="addTask" type="submit">Añadir tarea</button>
-                <!-- <button id="exitButton" class="exitButton" type="button">Cancelar</button> -->
-            <!-- </div> -->
+                <button id="addTask" class="addTask" type="submit">Añadir tarea
+                </button>
+                <button id="exitButton" class="exitButton" type="button">
+                    Cancelar
+                    <i class="fa-regular fa-circle-left fa-2x"></i>
+                </button>
             </form>
-            <button id="exitButton" class="exitButton" type="button">
+            <!-- <button id="exitButton" class="exitButton" type="button">
                 <i class="fa-regular fa-circle-left"></i>
-            </button>
+            </button> -->
         </div>
     </section>
-    <!-- pantallaListado -->
-    <section id="pantallaListado" class="pantallaListado">
-        <div class="contenedor">
-            <h1>Listado</h1>
-            <div id="listTask" class="listTask">
-                <p></p>
-                <i class="fa-duotone fa-circle-check"></i>
-                <i class="fa-solid fa-circle-xmark"></i>
-            </div>
-            <button id="agregarProductoListado" class="fav">
-                <i class="fa-solid fa-circle-plus"></i>
-            </button>
-        </div>
-    </section>
-    <!-- pantallaDetalle -->
     <section id="pantallaDetalle" class="pantallaDetalle">
         <div class="contenedor">
             <h1>Detalle</h1>
