@@ -21,11 +21,13 @@ header h1 {
   left: 50px;
 }
 .contTask {
-  height: 400px;
-  width: 400px;
-  border-radius: 47px;
-  background: #a16868;
-  box-shadow: 11px 11px 22px #6d4747, -11px -11px 22px #d58989;
+  height: 380px;
+  width: 380px;
+  display: grid;
+  border-radius: 43px;
+  background: linear-gradient(145deg, #b97383, #dc899b);
+  box-shadow: 6px 6px 24px #b57180, -6px -6px 24px #e78fa2;
+  /* grid-template-rows: repeat(auto-fit, minmax(50px)); */
 }
 .contenedor {
   width: 100%;
@@ -51,8 +53,29 @@ header h1 {
   background: #b36a4f;
 }
 .listTask {
+  padding-top: 25px;
   text-align: center;
-  margin-top: 45px;
+  align-items: center;
+  color: #222222;
+  font-weight: bold;
+  font-size: 18px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));
+  /* border: solid 2px black; */
+  justify-content: center;
+}
+.taskItems {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  /* border: solid 2px black; */
+  grid-template-columns: 250px 50px 50px;
+  text-align: left;
+  padding-left: 15px;
+  width: 350px;
+  border-radius: 47px;
+  background: #a16868;
+  box-shadow: 11px 11px 22px #6d4747, -11px -11px 22px #d58989;
 }
 /* td {
   height: 40px;
@@ -74,8 +97,8 @@ tr {
 
 .formTask {
   font-weight: bold;
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
   border-radius: 43px;
   background: linear-gradient(145deg, #b97383, #dc899b);
   box-shadow: 6px 6px 24px #b57180, -6px -6px 24px #e78fa2;
@@ -85,12 +108,12 @@ tr {
 }
 .addTask {
   height: 70px;
-  width: 185px;
+  width: 155px;
   border-radius: 43px;
   background: linear-gradient(315deg, #646c36, #778040);
   box-shadow: -22px -22px 44px #626a35, 22px 22px 44px #7c8643;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   border-style: none;
   color: #222222;
@@ -101,7 +124,7 @@ tr {
   align-items: center;
   cursor: pointer;
   position: relative;
-  left: 25px;
+  left: 33px;
 }
 .formTitle {
   display: grid;
@@ -109,12 +132,12 @@ tr {
   grid-column: 1/2;
   grid-row: 1/1;
   margin-top: 70px;
-  padding-left: 15px;
+  padding-left: 7px;
   position: relative;
-  left: 22px;
+  left: 28px;
   font-family: "Montserrat", sans-serif;
   height: 70px;
-  width: 333px;
+  width: 311px;
   border-style: none;
   border-radius: 43px;
   background: linear-gradient(145deg, #915e5e, #ac6f6f);
@@ -122,21 +145,21 @@ tr {
   /* background-color: #eec0c6; */
   /* background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%); */
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
 }
 ::placeholder {
   color: #222222;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 .exitButton {
   height: 70px;
-  width: 130px;
+  width: 111px;
   border-radius: 43px;
   background: linear-gradient(145deg, #9c164e, #b91a5d);
   box-shadow: 22px 22px 44px #98154d, -22px -22px 44px #c21b61;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "Montserrat", sans-serif;
   border-style: none;
   color: #222222;
@@ -149,5 +172,5 @@ tr {
   align-content: space-evenly;
   cursor: pointer;
   position: relative;
-  left: 38px;
+  left: 35px;
 }

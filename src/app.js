@@ -8,6 +8,7 @@ let exitButton = document.getElementById("exitButton");
 const formTask = document.getElementById("formTask");
 const formTitle = document.getElementById("formTitle");
 const listTask = document.getElementById("listTask");
+const contTask = document.getElementById("contTask");
 const template = document.getElementById("template").content;
 const fragment = document.createDocumentFragment();
 let tasks = {};
