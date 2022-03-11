@@ -112,7 +112,7 @@ tr {
   width: 155px;
   border-radius: 43px;
   background: linear-gradient(315deg, #646c36, #778040);
-  box-shadow: -22px -22px 44px #626a35, 22px 22px 44px #7c8643;
+  box-shadow: 11px 11px 24px #626a35, -11px -11px 24px #7c8643;
   font-weight: bold;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
@@ -158,7 +158,7 @@ tr {
   width: 111px;
   border-radius: 43px;
   background: linear-gradient(145deg, #9c164e, #b91a5d);
-  box-shadow: 22px 22px 44px #98154d, -22px -22px 44px #c21b61;
+  box-shadow: 11px 11px 24px #98154d, -11px -11px 24px #c21b61;
   font-weight: bold;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
