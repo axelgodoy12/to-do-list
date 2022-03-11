@@ -43,6 +43,8 @@ header h1 {
   height: 50px;
   border-radius: 50%;
   border: none;
+  background: linear-gradient(315deg, #646c36, #778040);
+  box-shadow: -22px -22px 44px #626a35, 22px 22px 44px #7c8643;
   position: absolute;
   right: 50px;
   bottom: 70px;
@@ -50,7 +52,6 @@ header h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background: #b36a4f;
 }
 .listTask {
   padding-top: 25px;
